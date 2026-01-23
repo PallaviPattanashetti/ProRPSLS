@@ -33,3 +33,4 @@
 /Users/pallavipraveen/Documents/Level-2/asignments/ProRPSLS/myapi/obj/Debug/net9.0/myapi.pdb
 /Users/pallavipraveen/Documents/Level-2/asignments/ProRPSLS/myapi/obj/Debug/net9.0/myapi.genruntimeconfig.cache
 /Users/pallavipraveen/Documents/Level-2/asignments/ProRPSLS/myapi/obj/Debug/net9.0/ref/myapi.dll
+/Users/pallavipraveen/Documents/Level-2/asignments/ProRPSLS/myapi/obj/Debug/net9.0/myapi.sourcelink.json
