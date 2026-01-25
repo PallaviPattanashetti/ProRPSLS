@@ -48,49 +48,54 @@ const getData = (choice) => {
 };
 
 
-oneWinBtn.onclick = () => {
+// oneWinBtn.onclick = () => {
+//     winLimit = 1;
+//     resetGame();
+// };
+
+oneWinBtn.addEventListener("click", () => {
     winLimit = 1;
     resetGame();
-};
 
-threeFiveBtn.onclick = () => {
+});
+threeFiveBtn.addEventListener("click", () => {
     winLimit = 3;
     resetGame();
-};
+});
 
-fourSevenBtn.onclick = () => {
+
+fourSevenBtn.addEventListener("click", () => {
     winLimit = 4;
     resetGame();
-};
-
+});
 
 
 async function handlePlay(choice) {
 
- 
+
     if (selectedPlayer === "CPU") {
         const result = await getData(choice);
 
         console.log("API result:", result);
 
-       if (result.includes("player")) {
-    player1Score++;
-    scoreTitle.textContent = `You picked ${choice}. Player won the round!`;
-}
-else if (result.includes("cpu")) {
-    player2Score++;
-    scoreTitle.textContent = `You picked ${choice}. CPU won the round!`;
-}
-else {
-    scoreTitle.textContent = "It's a draw!";
-}
+        if (result.includes("player")) {
+            player1Score++;
+            scoreTitle.textContent = `You picked ${choice}. Player won the round!`;
+        }
+        else if (result.includes("cpu")) {
+            player2Score++;
+            scoreTitle.textContent = `You picked ${choice}. CPU won the round!`;
+        }
+        else {
+            scoreTitle.textContent = "It's a draw!";
+        }
 
         updateUI();
         checkWinner();
         return;
     }
 
-  
+
     if (playerTurn === 1) {
         player1Choice = choice;
         playerTurn = 2;
