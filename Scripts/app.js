@@ -48,10 +48,7 @@ const getData = (choice) => {
 };
 
 
-// oneWinBtn.onclick = () => {
-//     winLimit = 1;
-//     resetGame();
-// };
+
 
 oneWinBtn.addEventListener("click", () => {
     winLimit = 1;
